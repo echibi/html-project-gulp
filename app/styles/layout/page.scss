@@ -1,0 +1,57 @@
+.main {
+    font-size: 1.5em;
+    color: $orange;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*CSS to House */
+
+.house-box {
+    margin: 0.5em 0 0;
+    font-size: 8em;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+    }
+}
+
+.house {
+    @extend .icon;
+    border-bottom: .938em solid #000;
+    border-left: .938em solid transparent;
+    border-right: .938em solid transparent;
+    &::before {
+        width: 1.4em;
+        height: .825em;
+        background: #000;
+    }
+    &::before {
+        margin: .938em 0 0 -.688em;
+    }
+    &::after {
+        width: .8em;
+        height: .2em;
+        margin: 1em 0 0 -.388em;
+        border: 0.2em solid #000;
+        border-top: none;
+        border-bottom: none;
+        transition: border 1s;
+    }
+    &:hover {
+        &::after {
+            border: 0.2em solid $orange;
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+}
+
+.window {}

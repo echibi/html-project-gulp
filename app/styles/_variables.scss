@@ -1,0 +1,59 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+$gray-darkest: #333;
+$gray-darker: #373a3c;
+$gray-dark: #373a3c;
+$gray: #55595c;
+$gray-light: #C9C9C9;
+$gray-lighter: #E3E3E3;
+$gray-lightest: #F1F1F1;
+//
+//	Brand colors.
+//
+$brand-primary: #0086BA; // Standard Färg.
+$orange: #F7921E;
+$orange-darker:#B14624;
+$purple:#60274A;
+$purple-darker:#3E1C34;
+$purple-darkest: #130912;
+
+$house-color:$purple-darker;
+//
+// Bootstrap.
+//
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-flex: false;
+$enable-rounded: false;
+//
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: #fff;
+$body-color: $gray-dark;
+// Links
+//
+// Style anchor elements.
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+// Grid breakpoints
+//
+$screen-min-xs: 0; // Extra small screen / phone
+$screen-min-sm: 34em; // Small screen / phone // 480
+$screen-min-md: 48em; // Medium screen / tablet // 720
+$screen-min-lg: 62em; // Large screen / desktop // 960
+$screen-min-xl: 75em; // Extra large screen / wide desktop // 1140
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: ( xs: $screen-min-xs, sm: $screen-min-sm, md:$screen-min-md, lg: $screen-min-lg, xl: $screen-min-xl);
+// Set a max width for wraps.
+$wrap-maxwidth: 1300px;
+// Fonts
+//$font-family-base: 'proxima-nova', Helvetica, Arial, sans-serif;
